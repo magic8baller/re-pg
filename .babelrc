@@ -1,10 +1,14 @@
 {
   "plugins": [
     [
-      "module-resolver",
+      "babel-plugin-module-resolver",
       {
+        "root": [
+          "./src"
+        ],
         "alias": {
-          "@icons": "./src/components/icons"
+          "@utils": "./src/utils",
+          "@calculator": "./src/components/calculator"
         }
       }
     ],
